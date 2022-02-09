@@ -24,7 +24,11 @@ export default function configureStore() {
     const store=createStore(
         rootStore, 
         initialState,
-        applyMiddleware(thunk)
+        composeWithDevTools (
+            applyMiddleware(
+                thunk,
+            )
+        )
     );
     return store;
 }
