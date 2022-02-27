@@ -1,7 +1,6 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react';
 
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import { Provider } from 'react-redux';
 
@@ -17,7 +16,7 @@ class App extends React.Component {
       <Provider store={store}>
         <BrowserRouter>
           <Switch>
-            <Route exact path="/" render={() => ("Home!!!!!")} />
+            <Route exact path="/" render={() => ('Home!!!!!')} />
             <Route path="/hello" render={() => <HelloWorld greeting="Friendsssss" />} />
           </Switch>
         </BrowserRouter>
@@ -26,4 +25,4 @@ class App extends React.Component {
   }
 }
 
-export default App
+export default App;

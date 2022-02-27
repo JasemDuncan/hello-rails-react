@@ -1,11 +1,11 @@
 class V1::GreetingsController < ApplicationController
-    def index
-        render json: { :greetings => [
-            {
-                :greeting => Message.order(Arel.sql('RANDOM()')).first.id
-            }
-        ]}.to_json
-        
-        
-    end
+  # rubocop:disable Style/HashSyntax
+  def index
+    render json: { :greetings => [
+      {
+        :greeting => Message.order(Arel.sql('RANDOM()')).first.greeting
+      }
+    ] }.to_json
+  end
+  # rubocop:enable Style/HashSyntax
 end
