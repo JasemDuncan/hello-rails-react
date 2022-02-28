@@ -18,8 +18,9 @@ function rootReducer(state, action) {
   switch (action.type) {
     case 'GET_GREETINGS_SUCCESS':
       return { greetings: action.json.greetings };
+    default:
+      return state;
   }
-  return state;
 }
 
 export default function configureStore() {
