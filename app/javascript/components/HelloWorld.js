@@ -34,7 +34,7 @@ export const HelloWorld = (props) => {
       Greeting:
       {' '}
       {greetings.greeting}
-      <button type="button" onClick={() => getGreetings}>GetGreetings</button>
+      <button type="button" onClick={() => getGreetings()}>GetGreetings</button>
       <br />
       <ul>{greetingsList}</ul>
     </>
