@@ -6,6 +6,7 @@
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^14.0.2",
     "postcss-preset-env": "^7.4.1",
+    "postcss-smart-import": "^0.7.6",
     "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "react_ujs": "^2.6.1",
